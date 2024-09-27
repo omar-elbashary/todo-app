@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="App">
+      <div class="home">
+        <div class="intro">
+          <h1 class="title">TODO</h1>
+          <button class="theme_toggle">
+            <img class="light_mood_icon" src="./images/icon-moon.svg" alt="" />
+            <img
+              class="dark_mood_icon theme_inactive"
+              src="./images/icon-sun.svg"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="input_box">
+          <button type="submit" class="submit_button">
+            <div class="input_circle"></div>
+          </button>
+          <input
+            class="task_input"
+            type="text"
+            placeholder="Creat a new todo..."
+          />
+        </div>
+      </div>
+
+      <div class="task_list_container">
+        <ul class="task_list"></ul>
+        <div class="tasks_info">
+          <p class="items_left">
+            <span class="items_left_value"></span> items left
+          </p>
+          <div class="filter_div_desktop">
+            <button class="filter_item" name="All">All</button>
+            <button class="filter_item" name="Active">Active</button>
+            <button class="filter_item" name="Completed">Completed</button>
+          </div>
+          <button class="clear_button">Clear Completed</button>
+        </div>
+        <div class="filter_div_mobile">
+          <button class="filter_item" name="All">All</button>
+          <button class="filter_item" name="Active">Active</button>
+          <button class="filter_item" name="Completed">Completed</button>
+        </div>
+        <h3 class="drag_message">Drag and drop to recoder list</h3>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
